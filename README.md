@@ -1,63 +1,38 @@
-# Bash Calculator Project
+# Bash Calculator
 
-## Overview
+A command-line calculator built with Bash. The project demonstrates Bash scripting, Linux commands, Git branching, pull requests, and merging.
 
-This project contains Bash scripts for performing basic arithmetic operations. It was created to practice Bash scripting, Linux commands, Git branches, commits, pull requests, and merging.
+## Features
 
-## Calculator Scripts
+- Addition, subtraction, multiplication, and division
+- Multiple operations in one expression
+- Parentheses support
+- Input validation
+- Division-by-zero handling
 
-- `add.sh`: Performs addition
-- `subb.sh`: Performs subtraction
-- `multi.sh`: Performs multiplication
-- `divide.sh`: Performs division and checks for division by zero
-- `hello.sh`: Displays Codespace environment information
+## Usage
 
-## Run the Scripts
-
-Give executable permission to all scripts:
+Give executable permission:
 
 ```bash
-chmod +x add.sh subb.sh multi.sh divide.sh hello.sh
+chmod +x calculator/calculator.sh
 ```
 
-Run the scripts:
+Run the calculator:
 
 ```bash
-./add.sh
-./subb.sh
-./multi.sh
-./divide.sh
-./hello.sh
+./calculator/calculator.sh
 ```
 
-## Linux Commands Used
+Example:
 
-```bash
-pwd
-ls
-ls -l
-ls -la
-cat README.md
-chmod +x script-name.sh
-./script-name.sh
+```text
+Enter an expression: 10+5-2
+Result = 13
 ```
 
-## Git Commands Used
+> The calculator uses integer arithmetic. For example, `7/2` returns `3`.
 
-```bash
-git status
-git branch
-git switch main
-git switch -c feature/branch-name
-git remote -v
-git diff
-git add filename
-git commit -m "Commit message"
-git push -u origin feature/branch-name
-git pull origin main
-git branch -d feature/branch-name
-```
+## Git Workflow
 
-## Workflow
-
-Each calculator operation was created on a separate feature branch, tested, committed, pushed to GitHub, and merged into `main` through a pull request.
+Each arithmetic feature was developed on a separate branch, tested, pushed to GitHub, and merged into `main` through a pull request.
